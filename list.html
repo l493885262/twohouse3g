@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>列表</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dropload.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="header clearfix">
+	<div class="fl head-left"><a href=""></a></div>
+	<div class="fl head-search"><a href="search.html"><img src="images/search.png" alt="">楼盘名称/开发商/地标/商圈</a></div>
+	<div class="fr head-map"><a href="">地图</a></div>
+</header>
+<!-- /header -->
+<!-- 条件搜索 -->
+<div class="c-search">
+	<ul class="c-menu">
+		<li><span>区域</span></li>
+		<li><span>总价</span></li>
+		<li><span>户型</span></li>
+		<li><span>其他</span></li>
+	</ul>
+	<div class="c-com">
+		<div class="c-region">
+			<ul>
+				<li class="active"><h3>不限</h3></li>
+				<li>
+					<h3>包河区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>瑶海区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>庐阳区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>庐阳区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>蜀山区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<div class="c-total">
+			<ul>
+				<li class="active"><a href="">全部</a></li>
+				<li><a href="">50万~70万</a></li>
+				<li><a href="">100万~150万</a></li>
+				<li><a href="">150万~200万</a></li>
+				<li><a href="">200万~300万</a></li>
+				<li><a href="">300万以上</a></li>
+			</ul>
+			<div class="c-sec">
+				<span>自定义</span>
+				<input class="sec-a" name="username" type="text" onkeyup="value=this.value.replace(/\D+/g,'')"> -
+				<input class="sec-b" name="username" type="text" onkeyup="value=this.value.replace(/\D+/g,'')"> 
+				<button class="sec-btn">确定</button>
+			</div>
+		</div>
+		<div class="c-type">
+			<ul>
+				<li class="active">全部</a></li>
+				<li><a href="">一室</a></li>
+				<li><a href="">二室</a></li>
+				<li><a href="">三室</a></li>
+				<li><a href="">四室</a></li>
+				<li><a href="">五室</a></li>
+				<li><a href="">五室以上</a></li>
+			</ul>
+		</div>
+		<div class="c-other">
+			<h3>特色</h3>
+			<ul class="other-a clearfix">
+				<li><span>满二免税</span></li>
+				<li><span>南北通透</span></li>
+				<li><span>精装修</span></li>
+				<li><span>地铁房</span></li>
+				<li><span>低首付</span></li>
+				<li><span>优质教育</span></li>
+				<li><span>毛坯房</span></li>
+				<li><span>复式</span></li>
+				<li><span>低首付</span></li>
+				<li><span>优质教育</span></li>
+				<li><span>毛坯房</span></li>
+				<li><span>复式</span></li>
+			</ul>
+			<h3>面积</h3>
+			<ul class="other-b clearfix">
+				<li><span>50㎡以下</span></li>
+				<li><span>50~70㎡</span></li>
+				<li><span>70~90㎡</span></li>
+				<li><span>90~110㎡</span></li>
+				<li><span>110~130㎡</span></li>
+				<li><span>130~150㎡</span></li>
+				<li><span>150~200㎡</span></li>
+				<li><span>200㎡以上</span></li>
+			</ul>
+			<h3>朝向</h3>
+			<ul class="other-c clearfix">
+				<li><span>南北通透</span></li>
+				<li><span>东西向</span></li>
+				<li><span>朝北</span></li>
+				<li><span>朝东</span></li>
+				<li><span>朝西</span></li>
+				<li><span>朝南</span></li>
+			</ul>
+			<div class="c-btn tc">
+				<input type="button" value="清空重选">
+				<input type="submit" value="确定">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /条件搜索 -->
+<!-- 遮罩层 -->
+<div class="pop"></div>
+<!-- /遮罩层 -->
+<!-- 房源列表 -->
+<section class="fy-list">
+	<div class="fy-con clearfix">
+	<a href="">
+		<div class="fy-l"><img class="lazyload" src="images/blank.png" data-original="images/img1.png"><span class="fy-sm">上门实堪</span></div>
+		<div class="fy-r">
+			<h3>三卧朝南 黄金三楼 万达商圈 临</h3>
+			<h4><span>120万</span>万科文化旅游城</h4>
+			<p>3室2厅1卫  87㎡ <span>12873元/㎡</span></p>
+			<div class="fy-sq">
+				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+			</div>
+		</div>
+	</a>
+	</div>
+	<div class="fy-con clearfix">
+	<a href="">
+		<div class="fy-l"><img class="lazyload" src="images/blank.png" data-original="images/img1.png"></div>
+		<div class="fy-r">
+			<h3>三卧朝南 黄金三楼 万达商圈 临</h3>
+			<h4><span>120万</span>万科文化旅游城</h4>
+			<p>3室2厅1卫  87㎡ <span>12873元/㎡</span></p>
+			<div class="fy-sq">
+				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+			</div>
+		</div>
+	</a>
+	</div>
+	<div class="fy-con clearfix">
+	<a href="">
+		<div class="fy-l"><img class="lazyload" src="images/blank.png" data-original="images/img1.png"></div>
+		<div class="fy-r">
+			<h3>三卧朝南 黄金三楼 万达商圈 临</h3>
+			<h4><span>120万</span>万科文化旅游城</h4>
+			<p>3室2厅1卫  87㎡ <span>12873元/㎡</span></p>
+			<div class="fy-sq">
+				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+			</div>
+		</div>
+	</a>
+	</div>
+	<div class="fy-con clearfix">
+	<a href="">
+		<div class="fy-l"><img class="lazyload" src="images/blank.png" data-original="images/img1.png"></div>
+		<div class="fy-r">
+			<h3>三卧朝南 黄金三楼 万达商圈 临</h3>
+			<h4><span>120万</span>万科文化旅游城</h4>
+			<p>3室2厅1卫  87㎡ <span>12873元/㎡</span></p>
+			<div class="fy-sq">
+				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+			</div>
+		</div>
+	</a>
+	</div>
+	<div class="fy-con clearfix">
+	<a href="">
+		<div class="fy-l"><img class="lazyload" src="images/blank.png" data-original="images/img1.png"></div>
+		<div class="fy-r">
+			<h3>三卧朝南 黄金三楼 万达商圈 临</h3>
+			<h4><span>120万</span>万科文化旅游城</h4>
+			<p>3室2厅1卫  87㎡ <span>12873元/㎡</span></p>
+			<div class="fy-sq">
+				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+			</div>
+		</div>
+	</a>
+	</div>
+	<div class="fy-con clearfix">
+	<a href="">
+		<div class="fy-l"><img class="lazyload" src="images/blank.png" data-original="images/img1.png"></div>
+		<div class="fy-r">
+			<h3>三卧朝南 黄金三楼 万达商圈 临</h3>
+			<h4><span>120万</span>万科文化旅游城</h4>
+			<p>3室2厅1卫  87㎡ <span>12873元/㎡</span></p>
+			<div class="fy-sq">
+				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+			</div>
+		</div>
+	</a>
+	</div>
+	
+</section>
+<div class="dropload-down">
+	<div class="dropload-load">↑上拉加载更多</div>
+</div>
+<!-- /房源列表 -->
+<script src="js/zepto/zepto.min.js"></script>
+<script src="js/zepto/zepto.picLazyLoad.js"></script>
+<script src="js/dropload.min.js"></script>
+<script src="js/twohouse.js"></script>
+<script src="js/layer/layer.js"></script>
+<script>
+//加载更多
+$(window).scroll(function() {
+    if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
+	    $(".dropload-load").html('<span class="loading"></span>加载中-自定义内容...');
+    }
+});
+</script>
+</body>
+</html>

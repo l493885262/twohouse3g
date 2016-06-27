@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>房源图片</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="fytp">
+<!-- 焦点图 -->
+<div id="focus" class="focus">
+	<!-- <div class="xczs"></div> -->
+	<div class="hd">
+		<ul></ul>
+	</div>
+	<div class="bd">
+		<ul>
+			<li><a href="#"><img src="images/img2.jpg" /></a><p>这里是客厅1的说明文字 ，有多少就显示多少。取值来自明<span>1/3</span></p></li>
+			<li><a href="#"><img src="images/img2.jpg" /></a><p>这里是客厅1的说明文字 ，有多少就显示多少。取值来自明取值来自于房源图片的说明<span>2/3</span></p></li>
+			<li><a href="#"><img src="images/img2.jpg" /></a><p>这里是客厅1的说明文字 ，有多少就显示多少。取值来自于房源图片的说明<span>3/3</span></p></li>
+		</ul>
+	</div>
+</div>
+<!-- /焦点图 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/layer2/layer.js"></script>
+<script src="js/touchSlide.1.1.js"></script>
+<script type="text/javascript">
+//焦点图
+TouchSlide({slideCell:"#focus",titCell:".hd ul",mainCell:".bd ul",effect:"leftLoop",autoPlay:true,autoPage:true});
+</script>
+</body>
+</html>

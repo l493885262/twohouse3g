@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>搜索</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="sea-head clearfix">
+	<div class="sea-con clearfix fl">
+		<div class="sea-name fl">
+			<h2>二手房</h2>
+			<ul>
+				<li>新房</li>
+				<li>二手房</li>
+			</ul>
+		</div>
+		<div class="sea-input fl">
+			<input type="text" placeholder="楼盘名称/开发商/地标/商圈">
+		</div>
+		<span class="sea-gb fr"></span>
+	</div>
+	<a href="" class="sea-dt fr">取消</a>
+</header>
+<!-- /header -->
+<!-- 热门搜索 -->
+<section class="sea-hot bgf">
+	<h2>热门搜索</h2>
+	<div class="sea-tag clearfix">
+		<a href="">淮矿馥邦天下</a>
+		<a href="">保利梧桐雨</a>
+		<a href="">三联学院</a>
+		<a href="">大蜀山</a>
+		<a href="">恒大</a>
+		<a href="">中海原山</a>
+	</div>		
+</section>
+<!-- /热门搜索 -->
+<!-- /搜索记录 -->
+<section>
+	<ul class="sea-list bgf mt10">
+		<li><a href="">华邦世贸城</a></li>
+		<li><a href="">苹果小镇</a></li>
+		<li><a href="">碧桂园</a></li>
+		<li><a href="">中环城</a></li>
+	</ul>
+	<div class="record bgf tc">清除搜索历史</div>
+</section>
+<!-- /搜索记录 -->
+
+<script src="js/zepto/zepto.min.js"></script>
+<script>
+$(function() {
+	//展开
+	$(".sea-name").click(function() {
+		$(this).toggleClass('active').children('ul').toggle();
+	});
+	//选择房源
+	$(".sea-name li").click(function() {
+		$(".sea-name h2").text($(this).text());
+	});
+	//搜索
+	$(".sea-input input").keyup(function() {
+		$(".sea-dt").text('搜索');
+	});
+	//
+	$(".sea-gb").click(function() {
+		$(".sea-input input").val("");
+		$(".sea-dt").text('取消');
+	});;
+//
+});
+</script>
+</body>
+</html>

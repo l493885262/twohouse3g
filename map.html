@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>位置及周边</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dropload.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="per-head">
+	<a class="per-fh" href=""></a>
+	<h1>位置及周边</h1>
+</header>
+<!-- /header -->
+<!-- 地图 -->
+<section class="ditu">
+	<img class="img-responsive" src="images/img6.png" alt="">
+	<ul class="ditu-list">
+		<li class="icona icona1"></li>
+		<li class="icona icona2"></li>
+		<li class="icona icona3"></li>
+		<li class="icona icona4"></li>
+		<li class="icona icona5"></li>
+		<li class="icona icona6"></li>
+	</ul>
+</section>
+<!-- /地图 -->
+<!-- /周边 -->
+<section class="per-dh">
+	<ul>
+		<li class="active"><i class="iconb iconb1"></i><p>公交</p></li>
+		<li class=""><i class="iconb iconb2"></i><p>地铁</p></li>
+		<li class=""><i class="iconb iconb3"></i><p>学校</p></li>
+		<li class=""><i class="iconb iconb4"></i><p>医院</p></li>
+		<li class=""><i class="iconb iconb5"></i><p>银行</p></li>
+		<li class=""><i class="iconb iconb6"></i><p>购物</p></li>
+		<li class=""><i class="iconb iconb7"></i><p>美食</p></li>
+	</ul>
+</section>
+<!-- /周边 -->
+
+<script src="js/zepto/zepto.min.js"></script>
+<script>
+	$(function() {
+		$(".per-dh li").click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		});;
+	});
+</script>
+</body>
+</html>
