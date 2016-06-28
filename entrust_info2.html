@@ -64,7 +64,11 @@
     <a href="">立即发布</a>
 </section>
 <!-- ent-btn -->
-<script src="js/zepto/zepto.min.js"></script>
+<div class="pop-ent">
+    <img src="" alt="">
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/layer2/layer.js"></script>
 <script>
 $(function() {
 //获取短信验证码
@@ -93,6 +97,21 @@ $(function() {
         }
     });
     //上传图片
+    $(".ent2 img").click(function() {
+        // alert("sd");
+        var _src=$(this).attr('src');
+        $(".pop-ent img").attr('src', _src);
+        layer.open({
+          type: 1,
+          skin: 'layudemo', //样式类名
+          shade: false,
+          title: false, //不显示标题
+          content:  $(".pop-ent") //捕获的元素
+        });
+    });
+    //
+    $(".pop-ent").height($(this).width());
+   
 });
 </script>
 </body>
