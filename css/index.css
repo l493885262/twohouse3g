@@ -19,7 +19,7 @@ img{border:0;vertical-align:middle;}
 /*.rel{position:relative}.abs{position:absolute}.ovh{overflow:hidden}.db{display:block}.dn{display:none}.di{display:inline;}.dib{display:inline-block;}.vm{vertical-align: middle;}.auto{margin-left:auto;margin-right:auto}*/
 .clearfix:after{display:block;content:"clear";height:0;clear:both;visibility:hidden}
 .f12{font-size: 12px;}.f13{font-size: 13px;}.f14{font-size: 14px;}
-.mt5{margin-top: 5px;}.mt10{margin-top: 10px;}.mt20{margin-top: 20px;}
+.mt5{margin-top: 5px;}.mt10{margin-top: 10px;}.mt15{margin-top: 15px;}.mt20{margin-top: 20px;}
 .pb10{padding-bottom: 10px;}
 .img-responsive{max-width: 100%;height: auto;display: block; width: 100%;}
 .bgf{background: #fff;}
@@ -157,7 +157,7 @@ img{border:0;vertical-align:middle;}
 .yabout h3{ text-align: center;font-size: 16px; font-weight: normal; height: 26px; line-height: 26px; padding-top: 20px;}
 .yabout input{ width: 100%;height: 20px; line-height: 20px; padding: 10px 0 10px 10px; display: block; margin: 0 auto; background: #fff; border:1px solid #ddd; font-size: 16px; border-radius: 5px;}
 .xf_sjtx{position: relative; width: 80%; margin: 20px auto;}
-.xf_sjtx .hqyz{ position: absolute; right: 0; top: 10px; width: 40%; height: 20px;text-align: center; line-height: 20px; font-size: 16px; color: #FFB950; padding-left: 6px; border-left: 1px solid #B2B2B2}
+.xf_sjtx .hqyz,.ent-info .hqyz{ position: absolute; right: 0; top: 10px; width: 40%; height: 20px;text-align: center; line-height: 20px; font-size: 16px; color: #FFB950; padding-left: 6px; border-left: 1px solid #B2B2B2}
 .js_zqn{ width: 100%; height: 48px; line-height: 48px; border-top: 1px solid #ccc;}
 .js_zqn span{position: relative; float: left; width: 50%; text-align: center; font-size: 16px;}
 .js_zqn span:first-child::after{  position: absolute;right: 0;top: 0;content: ''; width: 1px; height: 48px; background: #d9d9d9;}
@@ -249,7 +249,8 @@ img{border:0;vertical-align:middle;}
 .sea-list li a{display: block; padding-left: 30px; background: url(../images/bg6.png) no-repeat 10px center; background-size: 14px 14px;}
 .sea-list li a:hover{background-color: #f5f5f5;}
 .record{width: 100%; line-height: 44px; line-height: 44px; font-size: 15px; color: #999;}
-
+.sea-no img{width: 70px; height: auto; margin: 50px auto 20px;}
+.sea-no p{font-size: 14px; color: #999;}
 /**********地图找房**********/
 .map-menu{height: 43px; text-align: center; font-size: 18px; overflow: hidden;}
 .map-menu a{display: inline-block; margin: 0 10px; line-height: 40px;}
@@ -262,9 +263,10 @@ img{border:0;vertical-align:middle;}
 .map-con .ioc2{position: absolute; left: 50px; top: 50px; display: inline-block; height: 110px; color: #fff; text-align: center; overflow: hidden;z-index: 2; }
 .map-con .ioc2 p{ margin: 0 auto 5px; width: 36px; height: 36px; line-height: 36px;font-size: 14px; background: #73c850; border-radius: 50%; -webkit-border-radius: 50%;}
 .map-con .ioc2 em{ font-size: 12px; background: #73c850; padding: 2px 10px; border-radius: 5px; -webkit-border-radius: 5px;}
-.map-con .ioc3{position: absolute; left: 50px; top: 150px; display: inline-block; height: 20px; line-height: 20px; padding: 0 5px; border-radius: 5px; -webkit-border-radius: 5px; font-size: 12px; color: #fff; z-index: 2; }
-.map-con .ioc3 span{position: absolute; left: 50%; margin-left: -3px; content:'';width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent; border-top:5px solid;border-bottom:0;}
-
+.map-con .ioc3{position: absolute; left: 50px; top: 150px; display: inline-block; height: 20px; line-height: 20px; padding: 0 5px; background: #73c850; border-radius: 5px; -webkit-border-radius: 5px; font-size: 12px; color: #fff; z-index: 2; }
+.map-con .ioc3 span{position: absolute; left: 50%; margin-left: -3px; content:'';width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent; border-top:5px solid #73c850;border-bottom:0;}
+.map-con .ioc3.active{background: #ff3100;}
+.map-con .ioc3.active span{ border-top-color: #ff3100;}
 /*地图列表*/
 .map-btn1{position: absolute; right: 15px; top: 0px; font-size: 16px; color: #ffb950;}
 .map-list{display: none; position: fixed; left: 0; bottom: 0; width: 100%; z-index: 99}
@@ -274,3 +276,47 @@ img{border:0;vertical-align:middle;}
 .map-tit p{font-size: 14px; color: #999;}
 .map-tit p span{ color: #e63737;}
 .map-sc{position: absolute; right: 0; top: 0;}
+
+/**********委托**********/
+.entrust{position: fixed; left: 0; top:0; width: 100%; height: 100%; background: url(../images/img8.jpg) no-repeat; background-size: 100% 100%;}
+.ent-fh{position: absolute;display: block; left: 15px; top: 30px; width: 19px; height: 18px; background: url(../images/arrow_l.png) no-repeat; background-size: 100% 100%;}
+.entrust h2{margin-top: 20%; margin-bottom: 120px; font-size: 24px; color: #fff; font-weight: normal;}
+.entrust h3{ margin: 0 auto; width: 80px; height: 80px; line-height: 80px; background: #f1ba66; color: #fff; font-size: 17px;font-weight: normal; border-radius: 50%; -webkit-border-radius: 50%;overflow: hidden;}
+.entrust h3.active{background: #fff;}
+.entrust h3.active a{ color: #333;}
+.entrust h3 a{display: block; color: #fff;}
+.entrust p{ margin: 10px 0 20px; font-size: 14px; color: #fff;}
+/*基本信息*/
+.ent-menu{ height: 50px; line-height: 50px;}
+.ent-menu span{ display: inline-block; color: #999; font-size: 12px; text-align: left;}
+.ent-menu span i{display: inline-block; width: 14px; height: 14px; vertical-align: middle; margin-top: -2px; margin-right: 5px; background: url(../images/ent.png) no-repeat left top; background-size: 100% auto;}
+.ent-menu span.active i{background-position: left bottom;}
+.ent-menu em{display: inline-block; width: 8%;margin: 0 2%; height: 1px; background: #ddd; vertical-align: middle;}
+.ent-info{margin-top: 15px;}
+.ent-info h3{ width: 55px; padding-left: 15px; font-weight: normal; color: #999; font-size: 12px; margin-bottom: 5px;}
+.ent-info dl{position: relative; height: 50px; line-height: 50px; font-size: 14px; border-bottom: 1px solid #e5e5e5; background: #fff;}
+.ent-info dl:last-child{border:none;}
+.ent-info dl.bor{border:none;}
+.ent-info dl dt{float: left; width: 55px; padding-left: 15px;}
+.ent-info dl dd{position: relative; float: left; width: 75%;}
+.ent-info dl dd input{font-size: 15px; width: 86%; border:none;line-height: 24px; padding: 12px 0; vertical-align: top; }
+.ent-list{display: none; position: absolute; left: 0;top: 50px;width: 95%; background: #fff; box-shadow: 0 0 5px 2px #d9d9d9; z-index: 1;}
+.ent-list p{ height: 40px; line-height: 40px; border-bottom: 1px solid #dfdfdf; padding-left: 15px;}
+.ent-list p:last-child{border:none;}
+.ent-btn{ width: 84%; margin: 10px auto 0; padding-bottom: 20px; overflow: hidden;}
+.ent-btn p{font-size: 12px; color: #999;}
+.ent-btn a{display: block; margin-top: 20px; height: 44px; line-height: 44px; text-align: center; background: #ffb950;font-size: 17px; color: #fff;}
+.ent-info .hqyz{top: 15px; width: 105px;}
+.ent-wy{position: absolute; right: 15px;}
+.ent-img li{position: relative; float: left; width: 20%; margin: 15px 2.5% 0; overflow: hidden;}
+.ent-img li img{width: 100%;}
+.ent-img .ent-sc{position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0; z-index: 2;}
+.ent-img .ent2{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 3;}
+.ent-img .ent2 img{ width: 100%; height: 100%;}
+.ent-img .ent2 .entgb{position: absolute; right: 0;top: 0; display: block; width: 16px; height: 16px; background: #fd3d3a; border-radius: 50%; -webkit-border-radius: 50%;z-index: 4; text-align: center; color: #fff; line-height: 12px; cursor: pointer;}
+/*完成*/
+.ent-wc{ padding: 0 10%;}
+.ent-wc h2{margin-top: 50px; background: url(../images/bg9.png) no-repeat center top; background-size: 60px 60px; padding-top: 70px;text-align: center; font-size: 20px; font-weight: normal; color: #46c800;}
+.ent-wc p{margin-top: 10px; font-size: 14px; color: #999;}
+.ent-wc p a{ color: #007aff;}
+.ent-wc .ent-sy{display: block; margin: 30px auto 0; width: 120px; height: 36px; background: #fff; text-align: center; line-height: 36px; border:1px solid #c8c8cd; border-radius: 5px; -webkit-border-radius:5px; font-size: 16px; color: #666; }

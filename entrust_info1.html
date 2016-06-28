@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>委托-基本信息</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="per-head">
+    <a class="per-fh" href=""></a>
+    <h1>委托房源</h1>
+</header>
+<!-- /header -->
+<!-- ent-menu -->
+<section class="ent-menu bgf tc">
+    <span class="active"><i></i>基本信息</span>
+    <em></em>
+    <span><i></i>出售价格</span>
+    <em></em>
+    <span><i></i>完成</span>
+</section>
+<!-- /ent-menu -->
+<!-- ent-info -->
+<section class="ent-info">
+    <dl class="clearfix"><dt>小区</dt><dd><input type="text" placeholder="请输入小区名称"><div class="ent-list"><p>万达文化旅游城</p><p>万达文化旅游城</p></div></dd></dl>
+    <dl class="clearfix"><dt>楼栋</dt><dd><input type="text" placeholder="请输入所在楼栋"><div class="ent-list"><p>万达文化旅游城</p><p>万达文化旅游城</p></div></dd></dl>
+    <dl class="clearfix"><dt>单元</dt><dd><input type="text" placeholder="选填"><div class="ent-list"><p>万达文化旅游城</p><p>万达文化旅游城</p></div></dd></dl>
+    <dl class="clearfix"><dt>楼层</dt><dd><input type="text" placeholder="请输入楼层"></dd></dl>
+    <dl class="clearfix"><dt>房号</dt><dd><input type="text" placeholder="如1001"></dd></dl>
+</section>
+<!-- ent-info -->
+<!-- ent-btn -->
+<section class="ent-btn">
+    <p>准确的房源信息，将获得更精准的定价参考，以及最适合的经纪人为您服务</p>
+    <a href="">下一步</a>
+</section>
+<!-- ent-btn -->
+<script src="js/zepto/zepto.min.js"></script>
+<script>
+$(function() {
+    //输入提示
+    $(".ent-info input").keyup(function () {
+        $(this).next().show();
+    });
+    $(".ent-info input").blur(function () {
+        $(this).next().hide();
+    });
+});
+</script>
+</body>
+</html>

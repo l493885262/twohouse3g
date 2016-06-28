@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>委托-出售价格</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="per-head">
+    <a class="per-fh" href=""></a>
+    <h1>委托房源</h1>
+</header>
+<!-- /header -->
+<!-- ent-menu -->
+<section class="ent-menu bgf tc">
+    <span class="active"><i></i>基本信息</span>
+    <em></em>
+    <span class="active"><i></i>出售价格</span>
+    <em></em>
+    <span><i></i>完成</span>
+</section>
+<!-- /ent-menu -->
+<!-- ent-info -->
+<section class="ent-info">
+    <h3>期望售价</h3>
+    <dl class="clearfix bor"><dt>售价</dt><dd><input type="text" placeholder="请输入小区名称"></dd><span class="ent-wy">万</span></dl>
+    <h3 class="mt15">联系人</h3>
+    <dl class="clearfix"><dt>姓名</dt><dd><input type="text" placeholder="请输入联系人姓名"></dd></dl>
+    <dl class="clearfix"><dt>手机</dt><dd><input type="text" placeholder="请输入手机号码"></dd></dl>
+    <dl class="clearfix"><dt>验证码</dt><dd><input type="text" placeholder="请输入验证码"></dd><a href="javascript:void(0);" class="hqyz">获取验证码</a></dl>
+</section>
+<!-- ent-info -->
+<!-- ent-btn -->
+<section class="ent-btn">
+    <p class="tc mt10">添加照片更能吸引购房者</p>
+    <ul class="ent-img clearfix">
+        <li>
+            <img class="ent1" src="images/bg8.png" alt="">
+            <input class="ent-sc" type="file">
+            <div class="ent2">
+                <img src="images/img2.jpg" alt="">
+                <span class="entgb">x</span>
+            </div>
+        </li>
+        <li>
+            <img class="ent1" src="images/bg8.png" alt="">
+            <input class="ent-sc" type="file">
+        </li>
+        <li>
+            <img class="ent1" src="images/bg8.png" alt="">
+            <input class="ent-sc" type="file">
+        </li>
+        <li>
+            <img class="ent1" src="images/bg8.png" alt="">
+            <input class="ent-sc" type="file">
+        </li>
+    </ul>
+    <a href="">立即发布</a>
+</section>
+<!-- ent-btn -->
+<script src="js/zepto/zepto.min.js"></script>
+<script>
+$(function() {
+//获取短信验证码
+    var validCode=true;
+    $(".hqyz").click (function  () {
+        var time=5;
+        var code=$(this);
+        if (validCode) {
+            validCode=false;
+            // code.addClass("msgs1");
+        var t=setInterval(function  () {
+            time--;
+            code.html(time+"秒");
+            if (time==0) {
+                clearInterval(t);
+                code.html("重新获取");
+                validCode=true;
+                // code.removeClass("msgs1");
+            }
+            $(".layui-layer-close").click(function() {
+                clearInterval(t);
+                code.html("获取验证码");
+                validCode=true;
+            });;
+        },1000)
+        }
+    });
+    //上传图片
+});
+</script>
+</body>
+</html>

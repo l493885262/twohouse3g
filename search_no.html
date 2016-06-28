@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>搜索</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="sea-head clearfix">
+	<div class="sea-con clearfix fl">
+		<div class="sea-name fl">
+			<h2>二手房</h2>
+			<ul>
+				<li>新房</li>
+				<li>二手房</li>
+			</ul>
+		</div>
+		<div class="sea-input fl">
+			<input type="text" placeholder="楼盘名称/开发商/地标/商圈">
+		</div>
+		<span class="sea-gb fr"></span>
+	</div>
+	<a href="" class="sea-dt fr">取消</a>
+</header>
+<!-- /header -->
+<!-- 热门搜索 -->
+<section class="sea-no tc">
+	<img src="images/seh_ko.png" alt="">
+	<p>抱歉！没有搜索到房源信息！</p>
+</section>
+<!-- /热门搜索 -->
+
+<script src="js/zepto/zepto.min.js"></script>
+<script>
+$(function() {
+	//展开
+	$(".sea-name").click(function() {
+		$(this).toggleClass('active').children('ul').toggle();
+	});
+	//选择房源
+	$(".sea-name li").click(function() {
+		$(".sea-name h2").text($(this).text());
+	});
+	//搜索
+	$(".sea-input input").keyup(function() {
+		$(".sea-dt").text('搜索');
+	});
+	//
+	$(".sea-gb").click(function() {
+		$(".sea-input input").val("");
+		$(".sea-dt").text('取消');
+	});;
+//
+});
+</script>
+</body>
+</html>
