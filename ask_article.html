@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>问答-详情</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="per-head tit2">
+    <a class="per-fh" href=""></a>
+    <h1>问题详情</h1>
+</header>
+<!-- /header -->
+<!-- 问题详情 -->
+<section class="ask-art bgf">
+	<span class="ask-ww">问</span>
+	<h2>购房时定金不算入后期首付首付款里吗购时定算入款里吗？</h2>
+	<p>购房时定金不算入后期首付首付款里吗购房时定金不算入后期首付首付款里吗购房时定金不算入后购吗？</p>
+	<em>交易过户</em>
+	<p class="pp1">小冰 发布于 2015-10-13 13:23</p>
+	<div class="ask-gz active">
+		<i></i>
+		<span>关注</span>
+	</div>
+</section>
+<!-- /问题详情 -->
+<!-- 回答详情 -->
+<section class="ask-hd bgf mt10">
+	<h2>共1个回答</h2>
+	<h3><img src="images/user.png" alt="">管理员</h3>
+	<span>2015-10-13 13:23</span>
+	<p>二手房买卖中定金的双倍返还原则二手房买卖中定金的双倍返还原则二手房买卖中定金的双倍，返还原则二原则二原。</p>
+</section>
+<!-- /回答详情 -->
+<!-- 回答详情 -->
+<section class="ask-qt bgf mt10 mb10">
+	<h2><i></i>相关问题</h2>
+	<p><a href="">现在二手房交易还要交担保费用吗？现在二手房交易还要交担保费用吗？现在二手房交易还要交担保费用吗？</a></p>
+	<p><a href="">现在二手房交易还要交担保费用吗？</a></p>
+	<p><a href="">现在二手房交易还要交担保费用吗？</a></p>
+	<p><a href="">现在二手房交易还要交担保费用吗？</a></p>
+</section>
+<!-- /回答详情 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/layer2/layer.js"></script>
+<script>
+$(function() {
+	//关注
+	
+	$(".ask-gz").click(function() {
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			layer.msg('取消收藏');
+		}else{
+			$(this).addClass('active');
+			layer.msg('收藏成功');
+		};	
+	});
+//
+});
+</script>
+</body>
+</html>

@@ -23,7 +23,9 @@
 		</div>
 		<div class="sea-input fl">
 			<input type="text" placeholder="楼盘名称/开发商/地标/商圈">
+			<ul class="search-tips" style="display: none;"><li data-value="恒大华府" real-value="31" class=""><a href="#"><p><a href=""><span>20套房</span>恒大华府</a></p></a></li><li data-value="恒大城中央广场" real-value="2883" class=""><a href="#"><p><a href=""><span>0套房</span>恒大城中央广场</a></p></a></li><li data-value="华盛大运城" real-value="2803" class=""><a href="#"><p><a href=""><span>0套房</span>华盛大运城</a></p></a></li><li data-value="圣大国际" real-value="2710" class=""><a href="#"><p><a href=""><span>0套房</span>圣大国际</a></p></a></li><li data-value="合肥恒大城" real-value="2648" class=""><a href="#"><p><a href=""><span>0套房</span>合肥恒大城</a></p></a></li><li data-value="恒大帝景" real-value="2244" class=""><a href="#"><p><a href=""><span>0套房</span>恒大帝景</a></p></a></li><li data-value="恒大城" real-value="2126" class=""><a href="#"><p><a href=""><span>0套房</span>恒大城</a></p></a></li><li data-value="恒达阳光景苑" real-value="1516" class="active"><a href="#"><p><a href=""><span>0套房</span>恒达阳光景苑</a></p></a></li></ul>
 		</div>
+
 		<span class="sea-gb fr"></span>
 	</div>
 	<a href="" class="sea-dt fr">取消</a>
@@ -53,7 +55,6 @@
 	<div class="record bgf tc">清除搜索历史</div>
 </section>
 <!-- /搜索记录 -->
-
 <script src="js/zepto/zepto.min.js"></script>
 <script>
 $(function() {
@@ -68,12 +69,16 @@ $(function() {
 	//搜索
 	$(".sea-input input").keyup(function() {
 		$(".sea-dt").text('搜索');
+		$(".search-tips").show();
 	});
+
 	//
 	$(".sea-gb").click(function() {
 		$(".sea-input input").val("");
 		$(".sea-dt").text('取消');
-	});;
+		$(".search-tips").hide();
+	});
+	//
 //
 });
 </script>
