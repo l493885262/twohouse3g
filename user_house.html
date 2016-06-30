@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>看房记录</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="wap-font-scale" content="no">
+</head>
+
+<body>
+<!-- header -->
+<header class="user-head">
+	<a class="per-fh" href=""></a>
+	<h1>看房记录</h1>
+	<a class="head-dh" href=""></a>
+</header>
+<!-- /header -->
+<!-- 看房记录 -->
+<section class="user-record">
+	<div class="user-reca bgf">
+		<i class="user-sy"></i>
+		<h3>万科森林公园  1号楼  3单元 1203室</h3>
+		<p>庐阳区 - 四里河<span>￥ 98.5万</span></p>
+	</div>
+	<div class="user-recb clearfix">
+		<span class="as1">未带看</span>
+		<span class="user-time">2016-03-25 15:20</span>
+	</div>
+</section>
+<section class="user-record">
+	<div class="user-reca bgf">
+		<h3>万科森林公园  1号楼  3单元 1203室</h3>
+		<p>庐阳区 - 四里河<span>￥ 98.5万</span></p>
+	</div>
+	<div class="user-recb clearfix">
+		<span class="as2">去评价</span>
+		<span class="user-time">2016-03-25 15:20</span>
+	</div>
+</section>
+<section class="user-record">
+	<div class="user-reca bgf">
+		<h3>万科森林公园  1号楼  3单元 1203室</h3>
+		<p>庐阳区 - 四里河<span>￥ 98.5万</span></p>
+	</div>
+	<div class="user-recb clearfix">
+		<span class="">已带看（85.6分）</span>
+		<span class="user-time">2016-03-25 15:20</span>
+	</div>
+</section>
+<!-- /看房记录 -->
+<!-- 服务评分 -->
+<div class="fwpf">
+	<div class="fwpf-head">
+		<span class="fwpf-gb layui-layer-close"></span>
+	</div>
+	<div class="bgf fwpf-con">
+		<div class="fwpf-txt">
+			<textarea name="" id="" cols="30" rows="10" placeholder="这里写的是购房人对带看服务的评价。这个经纪人服务真是好啊，而且人又漂亮，又有耐心，不买房子都对不起这长相。"></textarea>
+		</div>
+		<div class="fwpf-pj">
+			<h3>服务评分（综合86.5分）</h3>
+			<dl class="clearfix"><dt>真实度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
+			<dl class="clearfix"><dt>满意度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
+			<dl class="clearfix"><dt>专业度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
+		</div>
+	</div>
+</div>
+<!-- /服务评分 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/layer2/layer.js"></script>
+<script>
+$(function() {
+	//
+	$(".user-record").click(function() {
+		layer.open({
+		  type: 1,
+		  closeBtn: 0,
+		  content: $('.fwpf'), //捕获的元素
+		});
+	});
+	//服务评分
+	$("dl dd").click(function() {
+		var index=$(this).index();
+		$(this).parent().attr('class', 'clearfix active'+index);
+		$(this).attr('class', 'ad').prevAll("dd").attr('class', 'ad')
+		$(this).nextAll().removeClass('ad');
+		console.log(index);
+	});
+});
+</script>
+</body>
+</html>

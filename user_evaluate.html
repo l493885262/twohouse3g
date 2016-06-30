@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>我的-看房评价</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="user-head">
+	<a class="per-fh" href=""></a>
+	<h1>看房评价</h1>
+</header>
+<!-- /header -->
+<!-- 我的分类 -->
+<section class="user-eval">
+	<div class="fwpf-txt bgf">
+		<textarea name="" id="" cols="30" rows="10" placeholder="快来说说这次看房怎么样吧~"></textarea>
+	</div>
+	<div class="fwpf-pj bgf mt10">
+		<h3>服务评分</h3>
+		<dl class="clearfix"><dt>真实度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
+		<dl class="clearfix"><dt>满意度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
+		<dl class="clearfix"><dt>专业度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
+	</div>
+	<div><input class="ask-btn" type="button" value="提交"></div>
+</section>
+<!-- /我的分类 -->
+
+<script src="js/jquery.min.js"></script>
+<script>
+$(function() {
+	//服务评分
+	$("dl dd").click(function() {
+		var index=$(this).index();
+		$(this).parent().attr('class', 'clearfix active'+index);
+		$(this).attr('class', 'ad').prevAll("dd").attr('class', 'ad')
+		$(this).nextAll().removeClass('ad');
+		console.log(index);
+	});
+});
+</script>
+</body>
+</html>
