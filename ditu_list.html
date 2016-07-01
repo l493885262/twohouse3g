@@ -8,6 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dropload.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 </section>
 <!-- /地图模块 -->
 <!-- /地图模块 -->
-<section class="fy-list map-list">
+<section class="fy-list map-list bgf">
 	<div class="map-btn2"></div>
 	<div class="map-tit bgf">
 		<h2>华润桃园里</h2>
@@ -42,55 +43,82 @@
 			<span>收藏</span>
 		</div>
 	</div>
-	<div class="fy-con clearfix">
-	<a href="">
-		<div class="fy-l"><img class="lazyload" src="images/img1.png"><span class="fy-sm">上门实堪</span></div>
-		<div class="fy-r">
-			<h3>高新区 和一花园 3室2厅</h3>
-			<h4><span>120万</span>135万</h4>
-			<p>3室2厅1卫</p>
-			<div class="fy-sq">
-				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
-				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+	<div class="dt-list">
+		<div class="fy-lcon">		
+			<div class="fy-con clearfix">
+			<a href="">
+				<div class="fy-l"><img class="lazyload" src="images/img1.png"><span class="fy-sm">上门实堪</span></div>
+				<div class="fy-r">
+					<h3>高新区 和一花园 3室2厅</h3>
+					<h4><span>120万</span>135万</h4>
+					<p>3室2厅1卫</p>
+					<div class="fy-sq">
+						<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+						<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="fy-con clearfix">
+			<a href="">
+				<div class="fy-l"><img class="lazyload" src="images/img1.png"></div>
+				<div class="fy-r">
+					<h3>包河区 绿地海顿公馆 3室2厅</h3>
+					<h4><span>120万</span>135万</h4>
+					<p>3室2厅1卫</p>
+					<div class="fy-sq">
+						<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+						<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="fy-con clearfix">
+			<a href="">
+				<div class="fy-l"><img class="lazyload" src="images/img1.png"></div>
+				<div class="fy-r">
+					<h3>包河区 绿地海顿公馆 3室2厅</h3>
+					<h4><span>120万</span>135万</h4>
+					<p>3室2厅1卫</p>
+					<div class="fy-sq">
+						<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+						<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="fy-con clearfix">
+			<a href="">
+				<div class="fy-l"><img class="lazyload" src="images/img1.png"></div>
+				<div class="fy-r">
+					<h3>政务区 融科九重锦 4室2厅</h3>
+					<h4><span>120万</span>135万</h4>
+					<p>3室2厅1卫</p>
+					<div class="fy-sq">
+						<span style="color:#62cc47; border-color:#62cc47">学区房</span>
+						<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
+					</div>
+				</div>
+			</a>
 			</div>
 		</div>
-	</a>
+		<div class="dropload-down bgf"><div class="dropload-load">↑上拉加载更多</div></div>
 	</div>
-	<div class="fy-con clearfix">
-	<a href="">
-		<div class="fy-l"><img class="lazyload" src="images/img1.png"></div>
-		<div class="fy-r">
-			<h3>包河区 绿地海顿公馆 3室2厅</h3>
-			<h4><span>120万</span>135万</h4>
-			<p>3室2厅1卫</p>
-			<div class="fy-sq">
-				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
-				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
-			</div>
-		</div>
-	</a>
-	</div>
-	<div class="fy-con clearfix">
-	<a href="">
-		<div class="fy-l"><img class="lazyload" src="images/img1.png"></div>
-		<div class="fy-r">
-			<h3>政务区 融科九重锦 4室2厅</h3>
-			<h4><span>120万</span>135万</h4>
-			<p>3室2厅1卫</p>
-			<div class="fy-sq">
-				<span style="color:#62cc47; border-color:#62cc47">学区房</span>
-				<span style="color:#ff9934; border-color:#ff9934">地铁口</span>
-			</div>
-		</div>
-	</a>
-	</div>	
 </section>
 
 <!-- /地图模块 -->
 <script src="js/jquery.min.js"></script>
 <script src="js/layer2/layer.js"></script>
 <script type="text/javascript">
+
 $(function() {
+	//加载更多
+    $(".dt-list").scroll(function(){
+        if ($(this)[0].scrollTop + $(this).height() >= $(this)[0].scrollHeight) {
+        	$(".dropload-load").html('<span class="loading"></span>加载中-自定义内容...');
+        };
+        
+    });
 	//收藏
 	$(".art-footl").click(function() {
 		var $act=$(this).children('i');

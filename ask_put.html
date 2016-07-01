@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>问答-提问</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- header -->
+<header class="per-head">
+    <a class="per-fh fh2" href=""></a>
+    <h1>我要提问</h1>
+</header>
+<!-- /header -->
+<!-- 我要提问 -->
+<section class="ask-up bgf mt10">
+	<textarea name="" id="" cols="30" rows="10" placeholder="问题描述的越清楚，解答的速度越快哦~"></textarea>
+</section>
+<!-- /我要提问 -->
+<!-- 我要提问 -->
+<section class="ask-upl bgf mt10">
+    <h2>选择问题类型</h2>
+    <ul class="clearfix">
+        <li>买房</li>
+        <li>交易过户</li>
+        <li>卖房</li>
+        <li>学区房</li>
+        <li>贷款</li>
+        <li>其他</li>
+    </ul>
+</section>
+<!-- /我要提问 -->
+<section>
+    <input class="ask-btn" type="button" value="提交">
+</section>
+<script src="js/zepto/zepto.min.js"></script>
+<script>
+$(function() {
+	//展开
+    $(".ask-upl li").click(function() {
+       $(this).toggleClass('active');
+    });
+//
+});
+</script>
+</body>
+</html>
