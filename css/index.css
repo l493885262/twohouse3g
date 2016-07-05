@@ -37,6 +37,14 @@ img{border:0;vertical-align:middle;}
 .head-map{ width: 15%; text-align: center; line-height: 30px;}
 .head-map a{ font-size: 16px; color: #ffb950;}
 
+/*头部导航*/
+.per-head{position: relative; height: 43px; line-height: 43px; background: #f8f8f8;overflow: hidden;}
+.per-head h1{ text-align: center;font-size: 18px;font-weight: normal;}
+.per-fh{display: block; position: absolute; left: 27px; top: 12px; width: 19px; height: 18px; background: url(../images/arrow_l.png) no-repeat; background-size: 100% 100%;}
+.per-fh.fh2{ left: 15px;}
+.head-set{position: absolute; right: 12px; top: 11px; display: inline-block; width: 20px; height: 20px; background: url(../images/set.png) no-repeat; background-size: 100% 100%;}
+.head-dh{position: absolute; right: 12px; top: 11px; display: inline-block; width: 20px; height: 20px; background: url(../images/dh.png) no-repeat; background-size: 100% 100%;}
+
 /*条件搜索*/
 .c-search{ height: 40px; border-bottom: 1px solid #f4f4f4; background: #fff;}
 .c-menu{display: -webkit-box;display: -webkit-flex;display: flex;height:40px;width:100%;background:#FFF;font-size:14px;border-bottom:1px solid #d9d9d9;-webkit-box-pack:center;-webkit-box-align:center}
@@ -189,9 +197,6 @@ img{border:0;vertical-align:middle;}
 .xqhx ul li p{margin-top: 5px;}
 .xqhx .qbhx{float: right; padding: 0 5px; font-weight: normal; color: #666; border:1px solid #ccc; background: #fff; margin-top: -1px;}
 /**********户型列表**********/
-.per-head{ height: 43px; line-height: 43px;position: relative; background: #f8f8f8;}
-.per-head h1{ text-align: center;font-size: 18px;font-weight: normal;}
-.per-fh{display: block; position: absolute; left: 27px; top: 12px; width: 19px; height: 18px; background: url(../images/arrow_l.png) no-repeat; background-size: 100% 100%;}
 .per-list{ padding-top: 14px;}
 .per-list h2{height: 22px; line-height: 22px;padding-left: 10px; font-size: 16px; font-weight: normal; border-left: 3px solid #ffb950;}
 .per{ height: 80px; overflow: hidden; padding: 13px 10px 13px 120px; border-bottom: 1px solid #ddd;}
@@ -389,15 +394,9 @@ img{border:0;vertical-align:middle;}
 .ask-upl li{ float: left; margin: 0 5px 10px 0; width: 80px; height: 28px; line-height: 28px; text-align: center;border:1px solid #a0a0a0; font-size: 14px; color: #666;}
 .ask-upl li.active{ background: #ffb950; color: #fff; border-color: #ffb950;}
 .ask-btn{display: block; width: 84%; margin: 20px auto; height: 44px; line-height: 44px; text-align: center; color: #fff; font-size: 17px; background: #ffb950;}
-.per-fh.fh2{ left: 15px;}
 
 /**********个人中心**********/
 /*我的*/
-.user-head{position: relative; height: 44px; line-height: 44px; overflow: hidden; background: #f8f8f8;}
-.user-head h1{ text-align: center; font-size: 18px; font-weight: normal;}
-.user-head .head-set{position: absolute; right: 12px; top: 11px; display: inline-block; width: 20px; height: 20px; background: url(../images/set.png) no-repeat; background-size: 100% 100%;}
-.user-head .head-dh{position: absolute; right: 12px; top: 11px; display: inline-block; width: 20px; height: 20px; background: url(../images/dh.png) no-repeat; background-size: 100% 100%;}
-
 .user-info{ padding: 0 8px; border-top: 1px solid #e5e5e5;}
 .user-name{position: relative; padding: 15px 0; height: 50px; line-height: 50px; overflow: hidden; border-bottom: 1px solid #e5e5e5;}
 .user-name h2{font-size: 15px; color: #999;font-weight: normal;}
