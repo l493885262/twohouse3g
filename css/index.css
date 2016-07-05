@@ -40,11 +40,11 @@ img{border:0;vertical-align:middle;}
 /*条件搜索*/
 .c-search{ height: 40px; border-bottom: 1px solid #f4f4f4; background: #fff;}
 .c-menu{display: -webkit-box;display: -webkit-flex;display: flex;height:40px;width:100%;background:#FFF;font-size:14px;border-bottom:1px solid #d9d9d9;-webkit-box-pack:center;-webkit-box-align:center}
-.c-menu li{position:relative;-webkit-box-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:center;-webkit-box-align:center;height:40px;width:100%;overflow: hidden; padding:0 10px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:1;color:#333}
+.c-menu li{position:relative; padding:0 10px;height:40px;width:100%; display:-webkit-box;-webkit-box-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:center;-webkit-box-align:center;	-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:1;	color:#333;overflow: hidden;}
 .c-menu li:before{position:absolute;left:0;top:10px;content:'';width:1px;height:20px;background:#d9d9d9}
 .c-menu li:first-child:before{content:'';width:0;height:0}
-.c-menu span{line-height: 1; display:block;text-align:center;max-width:75%; overflow: hidden; height: 40px; line-height: 40px;}
-.c-menu li:after{display:block;margin-left:6px;content:'';width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #666;border-bottom:0}
+.c-menu span{line-height: 1; text-align:center;max-width:75%; overflow: hidden; height: 40px; line-height: 40px;}
+.c-menu li:after{display: block; margin-left:6px;content:'';width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #666;border-bottom:0}
 .c-menu .active{color:#ffb950;}
 .c-menu .active:after{border-top:0;border-bottom:5px solid #ffb950}
 
@@ -77,25 +77,26 @@ img{border:0;vertical-align:middle;}
 
 /*房源列表*/
 /*.fy-list{padding-bottom: 30px;}*/
-.fy-con{ height: 80px; padding: 12px 2%; background: #fff; border-bottom: 1px solid #e5e5e5; overflow: hidden;}
+.fy-con{ height: 80px; padding: 12px 8px; background: #fff; border-bottom: 1px solid #e5e5e5; overflow: hidden;}
 .fy-l{position: relative; float: left; width: 100px; height: 80px; margin-right: 10px;}
 .fy-l img{ width: 100%; height: 100%;}
 .fy-sm{position: absolute; left: 8px; top: -2px; width: 26px; padding: 0 3px; height: 30px; background: #ff4431; font-size: 10px; color: #fff;text-align: center; line-height: 14px;}
 .fy-qf{position: absolute; right: 0; bottom: 0; padding: 0 5px; color: #fff; border-radius: 5px; -webkit-border-radius: 5px;}
 .fy-qf.qf1{ background: #18b4ed;}
 .fy-qf.qf2{ background: #61ba12;}
-.fy-r h3{height: 20px; line-height: 20px; overflow: hidden; font-size: 16px; font-weight: normal;white-space: nowrap;text-overflow: ellipsis;}
+.fy-r{height: 80px; overflow: hidden;}
+.fy-r h3{margin-top: -2px; height: 20px; line-height: 20px; overflow: hidden; font-size: 16px; font-weight: normal; white-space: nowrap;text-overflow: ellipsis;}
 .fy-r h4{height: 20px; line-height: 20px; font-size: 14px; font-weight: normal; color: #999; overflow: hidden;}
 .fy-r h4 span{ float: right; color: #e63737; font-size: 16px;}
 .fy-r p{font-size: 13px; line-height: 20px;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
 .fy-r p span{float: right;}
-.fy-r .fy-sq{margin-top: 2px;}
+.fy-r .fy-sq{ height: 18px; line-height: 16px; margin-top: 4px;}
 .fy-r .fy-sq span{ font-size: 12px; padding: 0px 2px; border:1px solid;}
 .fy-r i.zs1{ color: #60d6fe;}
 .fy-r i.zs2{ color: #73c850;}
 /**********房源详细**********/
 /*art-tit*/
-.art-tit{font-size: 14px; margin-bottom: 10px;}
+.art-tit{font-size: 14px; margin-bottom: 10px; margin-left: 5px;}
 .art-tit.move{ background: url(../images/bg4.png) no-repeat 98% center; background-size: 7px auto}
 /*focus*/
 .focus{ width:100%; height:260px; position:relative; overflow:hidden; }
@@ -109,10 +110,10 @@ img{border:0;vertical-align:middle;}
 .xczs{ width: 40px; height: 22px; text-align: center; line-height: 22px; position: absolute; color:#fff; bottom:20px; right: 8px; background-color: rgba(0, 0, 0, 0.6);border-radius:20px; padding: 2px 5px; font-size:14px;z-index: 999}
 .fh{position: absolute; left: 10px; top: 25px; width: 40px; height: 34px; background: url(../images/bg1.png) no-repeat; background-size: 100% 100%; z-index: 99999}
 /*art-info*/
-.art-info{position: relative; padding: 16px 2.4%; background: #fff;}
+.art-info{position: relative; padding: 16px 8px; background: #fff;}
 .art-info.borb{border-bottom: 1px solid #f4f4f4;}
 .art-info h2{font-size: 18px; font-weight: normal; height: 24px; line-height: 24px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
-.art-info h2.bor{border-left: 3px solid #ffb950; margin-left: -2.4%; padding-left: 5px;}
+.art-info h2.bor{border-left: 3px solid #ffb950; margin-left: -8px; padding-left: 5px;}
 .art-info p{line-height: 32px; margin-top: 5px; font-size: 14px; color: #999;}
 .art-info p i{ color: #007aff;}
 .art-info p span{ border:1px solid; height: 20px; line-height: 20px; padding: 0 5px; margin: 0 2px; display: inline-block;}
@@ -122,7 +123,9 @@ img{border:0;vertical-align:middle;}
 .art-in li span{ font-size: 18px;}
 .smsh{position: absolute; right: 10px; top: 22px; width: 69px; height: 60px; background: url(../images/bg2.png) no-repeat; background-size: 100% 100%;z-index: 2}
 /*fyin*/
-.fyin,.fyfo,.hfpq,.kfjl,.zbwz,.xqhx{ padding: 16px 2.4%;font-size: 14px;}
+.fyin,.fyfo,.hfpq,.kfjl,.zbwz,.xqhx{ padding: 16px 8px;font-size: 14px;}
+.tqfy{padding-top: 16px;}
+.tqfy .art-tit{margin-right: 8px; padding-left: 8px;margin-bottom: 0;}
 .fyin ul{ width: 100%;}
 .fyin ul li{float: left; width: 50%; font-size: 14px; height: 30px; line-height: 30px; overflow: hidden;white-space:nowrap}
 .fyin ul li.ww{ width: 100%;}
@@ -130,9 +133,12 @@ img{border:0;vertical-align:middle;}
 .fyin ul li a{ color: #007aff; font-size: 12px; border:1px solid #007aff; border-radius: 5px; padding: 0 2px;}
 /*fyfo*/
 .fyfo .fyfo-in{ height: 220px; overflow: hidden;}
+.fyfo .fyfo-in p{ font-size: 14px; padding: 0 3px;}
 .fyfo .fyfo-in.active{ height: auto;}
-.fyfo .see{ margin-top: 10px; margin-bottom: -10px; border-top: 1px solid #eee;}
-.fyfo .see span{ padding: 10px 0; display: inline-block; background: url(../images/bg3.png) no-repeat right center; background-size: 14px auto; padding-right: 16px; color: #ffb950;}
+.fyfo .see{ margin-top: 10px; margin-bottom: -15px; color: #ffb950; border-top: 1px solid #eee;}
+.fyfo .see span{ padding: 10px 0; display: inline-block; color: #ffb950;}
+.fyfo .see i{ display: inline-block;width: 14px;height: 8px;margin-top: -2px; margin-left: 5px; vertical-align: middle; background: url(../images/bg3.png) no-repeat right center; background-size: 14px auto;}
+.fyfo .see.active i{-webkit-transform:rotate(180deg);}
 /*hfpq*/
 .hfpq dt{float: left; width: 15%; color: #999;}
 .hfpq dd{float: left;}
@@ -145,7 +151,6 @@ img{border:0;vertical-align:middle;}
 .kfjl dd:nth-child(2){ width: 40%;}
 .kfjl dd:nth-child(3){ width: 30%;}
 .kfjl dd a{ display: inline-block; margin: 0 2px; padding: 0px 5px; line-height: 26px; border:1px solid #ffb950; background: #fffaf0; color: #ffb950; border-radius: 5px; -webkit-border-radius: 5px;}
-.zbwz{padding-bottom: 0;}
 /*art-foot*/
 .art-foot{ position: fixed; bottom: 0px; left: 0px; width: 100%; height: 58px; background: #fff; border-top: 1px solid #e5e5e5;}
 .art-footl{ width: 21%; height: 58px; text-align: center; border-right:1px solid #e5e5e5;}
@@ -283,7 +288,7 @@ img{border:0;vertical-align:middle;}
 .map-btn1{position: absolute; right: 15px; top: 0px; font-size: 16px; color: #ffb950;}
 .map-list{display: none; position: fixed; left: 0; bottom: 0; width: 100%; height: 300px; z-index: 99;}
 .map-btn2{ height: 17px; background: url(../images/bg7.png) no-repeat center bottom #fff; background-size: 17px 9px;}
-.map-tit{ position: relative; padding-bottom: 10px; padding-left: 2%; border-bottom: 1px solid #e5e5e5;}
+.map-tit{ position: relative; padding-bottom: 10px; padding-left: 8px; border-bottom: 1px solid #e5e5e5;}
 .map-tit h2{ font-size: 18px;}
 .map-tit p{font-size: 14px; color: #999;}
 .map-tit p span{ color: #e63737;}
@@ -337,9 +342,10 @@ img{border:0;vertical-align:middle;}
 .pop-ent img{ width: 100%; height: 100%;}
 
 /**********问答**********/
-.ask-inp{margin: 10px 15px;  height: 30px;overflow: hidden;}
-.ask-inp input{float: left; width: 84%; height: 24px; line-height: 24px; padding: 3px 0;text-indent: 30px; font-size: 12px; background:url(../images/search.png) no-repeat 10px center #fff; background-size: 14px 14px; border-radius:5px; -webkit-border-radius:5px; }
-.ask-inp .ask-dt{ float: right; display: inline-block; width: 16%; color: #ffb950!important; font-size: 16px; text-align: right;background: none;}
+.ask-inp{margin: 10px 15px; height: 30px; display: -webkit-box; display: -webkit-flex; display: flex; overflow: hidden;}
+.ask-input{ -webkit-box-flex:1; -webkit-flex:1; flex:1; border-radius:5px; -webkit-border-radius:5px; overflow: hidden;}
+.ask-inp input{ width: 100%; height: 24px; line-height: 24px; padding: 3px 0;text-indent: 30px; font-size: 12px; background:url(../images/search.png) no-repeat 10px center #fff; background-size: 14px 14px;}
+.ask-inp .ask-dt{padding: 0; width: 60px; color: #ffb950; font-size: 16px; margin-right: -15px; background: none;}
 .ask{overflow: hidden;}
 .ask-tit{position: relative; margin-top: 10px; padding: 0px 15px 0 15px; height: 35px; line-height: 35px; border-bottom: 1px solid #e5e5e5;}
 .ask-tit h2{font-size: 15px; font-weight: normal;}
@@ -442,6 +448,7 @@ img{border:0;vertical-align:middle;}
 .fwpf-head .fwpf-gb{position: absolute; display: inline-block; width: 24px; height: 24px; right: 16px; top: 20px; background: url(../images/fw1.png) no-repeat; background-size: 100% 100%;}
 .fwpf-con{ height: 198px; background: #fff; overflow: hidden;}
 .fwpf-txt{ margin: 0 15px; padding: 10px 0; height: 65px; border-top: 1px solid #e5e5e5;}
+.fwpf-txt p{font-size: 14px; color: #666; height: 66px;overflow: hidden;}
 .fwpf-txt textarea{ width: 100%; height: 100%; border:none; outline: none; font-size: 14px; color: #666;}
 .fwpf-pj{ padding: 0 15px;}
 .fwpf-pj h3{font-size: 14px; font-weight: normal;}
@@ -469,6 +476,6 @@ img{border:0;vertical-align:middle;}
 /*个人收藏*/
 .user-fy{ padding: 12px 0;}
 .user-sc{ padding: 0 10px;}
-.fy-r{margin-right: 10px; padding-right: 10px;}
+.user-fy .fy-r{margin-right: 10px; padding-right: 10px;}
 .user-sc-t{ width: 60px; height: 104px; margin-top: -12px; background: #f00;}
 .user-sc-t p{ color: #fff; line-height: 104px; text-align: center; font-size: 15px;}

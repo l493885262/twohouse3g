@@ -18,7 +18,7 @@
 	<a class="head-dh" href=""></a>
 </header>
 <!-- /header -->
-<!-- 看房记录 -->
+<!-- 我的委托 -->
 <section class="user-record">
 	<div class="user-reca recd">
 		<h3>万科森林公园  1号楼  3单元 1203室</h3>
@@ -49,46 +49,7 @@
 		<span class="user-time">2016-03-25 15:20</span>
 	</div>
 </section>
-<!-- /看房记录 -->
-<!-- 服务评分 -->
-<div class="fwpf">
-	<div class="fwpf-head">
-		<span class="fwpf-gb layui-layer-close"></span>
-	</div>
-	<div class="bgf fwpf-con">
-		<div class="fwpf-txt">
-			<textarea name="" id="" cols="30" rows="10" placeholder="这里写的是购房人对带看服务的评价。这个经纪人服务真是好啊，而且人又漂亮，又有耐心，不买房子都对不起这长相。"></textarea>
-		</div>
-		<div class="fwpf-pj">
-			<h3>服务评分（综合86.5分）</h3>
-			<dl class="clearfix"><dt>真实度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
-			<dl class="clearfix"><dt>满意度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
-			<dl class="clearfix"><dt>专业度</dt><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl>
-		</div>
-	</div>
-</div>
-<!-- /服务评分 -->
-<script src="js/jquery.min.js"></script>
-<script src="js/layer2/layer.js"></script>
-<script>
-$(function() {
-	//
-	$(".user-record").click(function() {
-		layer.open({
-		  type: 1,
-		  closeBtn: 0,
-		  content: $('.fwpf'), //捕获的元素
-		});
-	});
-	//服务评分
-	$("dl dd").click(function() {
-		var index=$(this).index();
-		$(this).parent().attr('class', 'clearfix active'+index);
-		$(this).attr('class', 'ad').prevAll("dd").attr('class', 'ad')
-		$(this).nextAll().removeClass('ad');
-		console.log(index);
-	});
-});
+<!-- /我的委托 -->
 </script>
 </body>
 </html>

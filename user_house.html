@@ -58,7 +58,7 @@
 	</div>
 	<div class="bgf fwpf-con">
 		<div class="fwpf-txt">
-			<textarea name="" id="" cols="30" rows="10" placeholder="这里写的是购房人对带看服务的评价。这个经纪人服务真是好啊，而且人又漂亮，又有耐心，不买房子都对不起这长相。"></textarea>
+			<p>这里写的是购房人对带看服务的评价。这个经纪人服务真是好啊，而且人又漂亮，又有耐心，不买房子都对不起这长相。</p>
 		</div>
 		<div class="fwpf-pj">
 			<h3>服务评分（综合86.5分）</h3>
@@ -80,14 +80,6 @@ $(function() {
 		  closeBtn: 0,
 		  content: $('.fwpf'), //捕获的元素
 		});
-	});
-	//服务评分
-	$("dl dd").click(function() {
-		var index=$(this).index();
-		$(this).parent().attr('class', 'clearfix active'+index);
-		$(this).attr('class', 'ad').prevAll("dd").attr('class', 'ad')
-		$(this).nextAll().removeClass('ad');
-		console.log(index);
 	});
 });
 </script>

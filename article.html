@@ -72,9 +72,7 @@
 		<p>3、其他情况：小区地理位置优越，交通便利通畅，周边银行、超市、医院、菜市、学校、社区活动所等一应俱全，商业圈成熟，配套极佳，人气旺盛，方便生活</p>
 		<p>3、其他情况：小区地理位置优越，交通便利通畅，周边银行、超市、医院、菜市、学校、社区活动所等一应俱全，商业圈成熟，配套极佳，人气旺盛，方便生活</p>
 	</div>
-	<div class="tc see">
-		<span>全部</span>
-	</div>
+	<div class="tc see"><span>全部</span><i></i></div>
 </section>
 <!-- /房源介绍 -->
 <!-- 划片学区 -->
@@ -116,7 +114,7 @@
 </section>
 <!-- /位置周边 -->
 <!-- 同小区房源 -->
-<section class="mt10 bgf zbwz">
+<section class="mt10 bgf tqfy">
 	<a href=""><h3 class="art-tit move">同小区房源（20套）</h3></a>
 	<div class="fy-con clearfix">
 	<a href="">
@@ -180,10 +178,15 @@
 //焦点图
 TouchSlide({slideCell:"#focus",titCell:".hd ul",mainCell:".bd ul",effect:"leftLoop",autoPlay:true,autoPage:true,pageStateCell:".xczs"});
 $(function() {
-	//全部
+	//全部-收起
 	$(".see").click(function() {
-		$(this).hide();
-		$(".fyfo-in").toggleClass('active');
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active').children('span').text('全部');
+			$(".fyfo-in").removeClass('active');
+		}else{
+			$(this).addClass('active').children('span').text('收起');
+			$(".fyfo-in").addClass('active');
+		};
 	});
 	//收藏
 	$(".art-footl").click(function() {
