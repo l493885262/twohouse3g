@@ -20,6 +20,7 @@
 </header>
 <!-- /header -->
 <!-- 条件搜索 -->
+<div class="c-nav">
 <div class="c-search">
 	<ul class="c-menu">
 		<li><span>区域</span></li>
@@ -59,6 +60,96 @@
 						<dd><a href="">包河区政府</a></dd>
 						<dd><a href="">骆岗机场</a></dd>
 						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>庐阳区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>庐阳区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>蜀山区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>庐阳区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>庐阳区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+					</dl>
+				</li>
+				<li>
+					<h3>蜀山区</h3>
+					<dl>
+						<dd><a href="">不限</a></dd>
+						<dd><a href="">万达广场</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">工大东区</a></dd>
+						<dd><a href="">五里庙</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">包河区政府</a></dd>
+						<dd><a href="">骆岗机场</a></dd>
+						<dd><a href="">周谷堆 </a></dd>
 					</dl>
 				</li>
 				<li>
@@ -178,6 +269,7 @@
 		</div>
 	</div>
 </div>
+</div>
 <!-- /条件搜索 -->
 <!-- 遮罩层 -->
 <div class="pop"></div>
@@ -280,11 +372,26 @@
 <script src="js/twohouse.js"></script>
 <script src="js/layer/layer.js"></script>
 <script>
+$(function() {
+	//悬浮
+	if ($(window).scrollTop()>50) {
+			$(".c-search").addClass('menuinfo');
+		}
+});
 //加载更多
 $(window).scroll(function() {
+	//滑动悬浮
+	if ($(window).scrollTop()>50) {
+		$(".c-search").addClass('menuinfo');
+	}else{
+		$(".c-search").removeClass('menuinfo');
+	};
+	//
     if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
 	    $(".dropload-load").html('<span class="loading"></span>加载中-自定义内容...');
     }
+    //
+
 });
 </script>
 </body>

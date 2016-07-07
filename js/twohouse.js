@@ -8,6 +8,7 @@ $(function() {
 			$(this).addClass('active').siblings().removeClass('active');
 			$(".c-com").show().children().eq(index).show().siblings().hide();
 			$(".pop").show();
+			document.body.style.overflow='hidden';
 		};		
 	});
 	$(".pop").click(function() {
@@ -59,6 +60,7 @@ $(function() {
 	function gbc () {
 		$(".c-com,.pop").hide();
 		$(".c-menu li").removeClass('active');
+		document.body.style.overflow='auto';
 	}
 	//
 	$(".sec-btn").click(function() {
