@@ -22,9 +22,9 @@
 	</div>
 	<div class="bd">
 		<ul>
-			<li><a href="#"><img src="images/img2.jpg" /></a></li>
-			<li><a href="#"><img src="images/img2.jpg" /></a></li>
-			<li><a href="#"><img src="images/img2.jpg" /></a></li>
+			<!-- <li><a href="#"><img src="images/img2.jpg" /></a></li> -->
+			<!-- <li><a href="#"><img src="images/img2.jpg" /></a></li> -->
+			<!-- <li><a href="#"><img src="images/img2.jpg" /></a></li> -->
 		</ul>
 	</div>
 </div>
@@ -140,8 +140,6 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/touchSlide.1.1.js"></script>
 <script type="text/javascript">
-//焦点图
-TouchSlide({slideCell:"#focus",titCell:".hd ul",mainCell:".bd ul",effect:"leftLoop",autoPlay:true,autoPage:true,pageStateCell:".xczs"});
 $(function() {
 	//全部-收起
 	$(".see").click(function() {
@@ -153,6 +151,8 @@ $(function() {
 			$(".fyfo-in").addClass('active');
 		};
 	});
+	//焦点图
+	TouchSlide({slideCell:"#focus",titCell:".hd ul",mainCell:".bd ul",effect:"leftLoop",autoPlay:true,autoPage:true,pageStateCell:".xczs"});
 //
 });
 </script>

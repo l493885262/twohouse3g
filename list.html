@@ -23,7 +23,7 @@
 <div class="c-nav">
 <div class="c-search">
 	<ul class="c-menu">
-		<li><span>区域</span></li>
+		<li><span>包河区政府</span></li>
 		<li><span>总价</span></li>
 		<li><span>户型</span></li>
 		<li><span>其他</span></li>
@@ -227,41 +227,43 @@
 			</ul>
 		</div>
 		<div class="c-other">
-			<h3>特色</h3>
-			<ul class="other-a clearfix">
-				<li><span>满二免税</span></li>
-				<li><span>南北通透</span></li>
-				<li><span>精装修</span></li>
-				<li><span>地铁房</span></li>
-				<li><span>低首付</span></li>
-				<li><span>优质教育</span></li>
-				<li><span>毛坯房</span></li>
-				<li><span>复式</span></li>
-				<li><span>低首付</span></li>
-				<li><span>优质教育</span></li>
-				<li><span>毛坯房</span></li>
-				<li><span>复式</span></li>
-			</ul>
-			<h3>面积</h3>
-			<ul class="other-b clearfix">
-				<li><span>50㎡以下</span></li>
-				<li><span>50~70㎡</span></li>
-				<li><span>70~90㎡</span></li>
-				<li><span>90~110㎡</span></li>
-				<li><span>110~130㎡</span></li>
-				<li><span>130~150㎡</span></li>
-				<li><span>150~200㎡</span></li>
-				<li><span>200㎡以上</span></li>
-			</ul>
-			<h3>朝向</h3>
-			<ul class="other-c clearfix">
-				<li><span>南北通透</span></li>
-				<li><span>东西向</span></li>
-				<li><span>朝北</span></li>
-				<li><span>朝东</span></li>
-				<li><span>朝西</span></li>
-				<li><span>朝南</span></li>
-			</ul>
+			<div class="c-other-h">
+				<h3>特色</h3>
+				<ul class="other-a clearfix">
+					<li><span>满二免税</span></li>
+					<li><span>南北通透</span></li>
+					<li><span>精装修</span></li>
+					<li><span>地铁房</span></li>
+					<li><span>低首付</span></li>
+					<li><span>优质教育</span></li>
+					<li><span>毛坯房</span></li>
+					<li><span>复式</span></li>
+					<li><span>低首付</span></li>
+					<li><span>优质教育</span></li>
+					<li><span>毛坯房</span></li>
+					<li><span>复式</span></li>
+				</ul>
+				<h3>面积</h3>
+				<ul class="other-b clearfix">
+					<li><span>50㎡以下</span></li>
+					<li><span>50~70㎡</span></li>
+					<li><span>70~90㎡</span></li>
+					<li><span>90~110㎡</span></li>
+					<li><span>110~130㎡</span></li>
+					<li><span>130~150㎡</span></li>
+					<li><span>150~200㎡</span></li>
+					<li><span>200㎡以上</span></li>
+				</ul>
+				<h3>朝向</h3>
+				<ul class="other-c clearfix">
+					<li><span>南北通透</span></li>
+					<li><span>东西向</span></li>
+					<li><span>朝北</span></li>
+					<li><span>朝东</span></li>
+					<li><span>朝西</span></li>
+					<li><span>朝南</span></li>
+				</ul>
+			</div>
 			<div class="c-btn tc">
 				<input type="button" value="清空重选">
 				<input type="submit" value="确定">
@@ -373,25 +375,43 @@
 <script src="js/layer/layer.js"></script>
 <script>
 $(function() {
-	//悬浮
-	if ($(window).scrollTop()>50) {
-			$(".c-search").addClass('menuinfo');
-		}
-});
-//加载更多
-$(window).scroll(function() {
-	//滑动悬浮
+	//阻止滑动
+	$('.pop').on('touchstart',function(e){
+        e.preventDefault();
+        e.stopPropagation();
+    });
+	//导航悬浮
 	if ($(window).scrollTop()>50) {
 		$(".c-search").addClass('menuinfo');
-	}else{
-		$(".c-search").removeClass('menuinfo');
-	};
-	//
-    if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
-	    $(".dropload-load").html('<span class="loading"></span>加载中-自定义内容...');
-    }
-    //
-
+	}
+	// 图片懒加载
+	picLazyLoad({
+      className: "lazyload"
+    });
+    //导航其他-设置高度
+    var $qth = $(".c-other-h");
+    var $wh  = $(window).height();
+    if ($(window).height()<634) {
+    	$qth.css({
+    		overflow: 'auto',
+    		height: $wh-$(".header").height()-$(".c-nav").height()-$(".fy-con").height()-67
+    	});
+    };
+    //加载更多
+	$(window).scroll(function() {
+		//滑动导航悬浮
+		if ($(window).scrollTop()>50) {
+			$(".c-search").addClass('menuinfo');
+		}else{
+			$(".c-search").removeClass('menuinfo');
+		};
+		//下拉刷新
+	    if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
+		    $(".dropload-load").html('<span class="loading"></span>加载中-自定义内容...');
+	    }
+	    //
+	});
+//
 });
 </script>
 </body>

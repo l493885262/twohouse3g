@@ -8,7 +8,7 @@ $(function() {
 			$(this).addClass('active').siblings().removeClass('active');
 			$(".c-com").show().children().eq(index).show().siblings().hide();
 			$(".pop").show();
-			document.body.style.overflow='hidden';
+			$("body").addClass('positionFixed');
 		};		
 	});
 	$(".pop").click(function() {
@@ -60,7 +60,7 @@ $(function() {
 	function gbc () {
 		$(".c-com,.pop").hide();
 		$(".c-menu li").removeClass('active');
-		document.body.style.overflow='auto';
+		$("body").removeClass('positionFixed');
 	}
 	//
 	$(".sec-btn").click(function() {
@@ -78,10 +78,6 @@ $(function() {
 			$(".c-menu li").eq(1).children().html(vala+"-"+valb);
 		};
 	});
-	// 图片懒加载
-	picLazyLoad({
-      className: "lazyload"
-    });
 //
 });
 

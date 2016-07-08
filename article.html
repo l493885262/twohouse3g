@@ -165,7 +165,7 @@
 		<span>收藏</span>
 	</div>
 	<div class="art-footr fr">
-		<a href="tel:0551666666">电话咨询</a>
+		<a class="btel" href="tel:0551666666">电话咨询</a>
 		<a class="yykf" href="javascript:;">预约看房</a>
 	</div>
 </section>
@@ -175,8 +175,6 @@
 <script src="js/layer2/layer.js"></script>
 <script src="js/touchSlide.1.1.js"></script>
 <script type="text/javascript">
-//焦点图
-TouchSlide({slideCell:"#focus",titCell:".hd ul",mainCell:".bd ul",effect:"leftLoop",autoPlay:true,autoPage:true,pageStateCell:".xczs"});
 $(function() {
 	//全部-收起
 	$(".see").click(function() {
@@ -201,12 +199,24 @@ $(function() {
 	});
 	//预约看房
 	$(".yykf").click(function() {
+		layer.closeAll()
 		layer.open({
-		  type: 1,
+		  type:1,
 		  skin: 'layer-molv',
 		  shade: false,
 		  title: false, //不显示标题
 		  content: $('.yabout'), //捕获的元素
+		});
+	});
+	//拨打电话
+	$(".btel").click(function() {
+		layer.closeAll();
+		layer.open({
+		  type: 1,
+		  skin: 'bdtela',
+		  shade: false,
+		  title: false, //不显示标题
+		  content: '<div class="bdtel"><p>接通后，需要人工拨打分机号：</p><h3>5086</h3><a class="ask-btn" href="tel:055164504903">现在拨打</a></div>'
 		});
 	});
 	//获取短信验证码
@@ -234,6 +244,8 @@ $(function() {
 		},1000)
 		}
 	})
+	//焦点图
+	TouchSlide({slideCell:"#focus",titCell:".hd ul",mainCell:".bd ul",effect:"leftLoop",autoPlay:true,autoPage:true,pageStateCell:".xczs"});
 //
 });
 </script>
